@@ -53,4 +53,17 @@ module vape_base(msg, height) {
 
 $fn = 360;
 
-vape_base("vape holder v0.1", 10);
+
+
+difference() {
+    vape_base("vape holder v0.1", 10);
+    translate([0, 0, -35])
+        vape_base("vape holder v0.1", 10.1);
+    
+      translate([0, 0, 0])
+    cube([20, 60, 25]);
+    
+}
+
+
+  
